@@ -61,8 +61,16 @@
     exfat
     paper-gtk-theme
     paper-icon-theme
-    hack-font
   ];
+
+  # Fonts
+  fonts = {
+    enableFontDir = true;
+    enableGhostscriptFonts = true;
+    fonts = with pkgs; [
+      hack-font
+    ];
+  };
 
   # X Server stuff
   services.xserver.enable = true;
