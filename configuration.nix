@@ -68,7 +68,9 @@
     enableFontDir = true;
     enableGhostscriptFonts = true;
     fonts = with pkgs; [
-      hack-font
+      hack-font # For emacs and terminal emulators
+      google-fonts # For mostly design or documents
+      vistafonts # For Microsoft Office documents
     ];
   };
 
